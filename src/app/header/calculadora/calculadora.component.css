@@ -1,0 +1,61 @@
+.container{
+    width: 70%;
+    /* border: 1px solid black; */
+    margin: 40px auto;
+    padding: 0;
+}
+
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    background-color: #0e0e10;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.inputs-calculadora{
+    padding: 20px;
+}
+
+.inputs-calculadora input{
+    margin: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+}
+
+.botones{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+button{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.resultado{
+    margin: 20px;
+    background-color: #ddffff;
+    border-left: 8px solid #28c9e9;
+    /* display: none; */
+}
+
+.resultado h1{
+    text-align: center;
+    margin: 25px 0;
+}

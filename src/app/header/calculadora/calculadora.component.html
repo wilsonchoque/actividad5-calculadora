@@ -1,0 +1,31 @@
+<div class="container">
+
+    <div class="titulo">
+        <h1>Calculadora</h1>
+    </div>
+
+    <div class="formulario">
+
+        <div class="inputs-calculadora">
+            <input type="number" #numero1 class="form-control" id="numero1" >
+            <input type="number" #numero2 class="form-control" id="numero2" >
+
+            <div class="botones">
+                <button type="button" (click)="operacion(numero1.value, numero2.value, '+')" class="btn btn-success">Suma</button>
+                <button type="button" (click)="operacion(numero1.value, numero2.value, '-')" class="btn btn-dark">Resta</button>
+                <button type="button" (click)="operacion(numero1.value, numero2.value, '*')" class="btn btn-danger">Multiplicacion</button>
+                <button type="button" (click)="operacion(numero1.value, numero2.value, '/')" class="btn btn-warning">Division</button>
+            </div>
+
+
+        </div>
+
+        <div class="resultado" *ngIf="element == true">
+            <h1>Resultado:</h1>
+            <h1>{{resultado}}</h1>
+        </div>
+
+    </div>
+
+
+</div>
